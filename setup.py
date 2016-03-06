@@ -31,6 +31,6 @@ setup(name             = 'CHIP_IO',
       classifiers      = classifiers,
       packages         = find_packages(),
       ext_modules      = [Extension('CHIP_IO.GPIO', ['source/py_gpio.c', 'source/event_gpio.c', 'source/constants.c', 'source/common.c'], extra_compile_args=['-Wno-format-security']),
-                          Extension('CHIP_IO.PWM', ['source/py_pwm.c', 'source/c_pwm.c', 'source/constants.c', 'source/common.c'], extra_compile_args=['-Wno-format-security'])]) #,
-#                          Extension('CHIP_IO.ADC', ['source/py_adc.c', 'source/c_adc.c', 'source/constants.c', 'source/common.c'], extra_compile_args=['-Wno-format-security']),
+                          Extension('CHIP_IO.PWM', ['source/py_pwm.c', 'source/c_pwm.c', 'source/constants.c', 'source/common.c'], extra_compile_args=['-Wno-format-security']),
+                          Extension('CHIP_IO.ADC', ['source/py_adc.c', 'source/c_adc.c', 'source/constants.c', 'source/common.c'], extra_compile_args=['-Wno-format-security'])]) #,
 #                          Extension('CHIP_IO.SPI', ['source/spimodule.c', 'source/constants.c', 'source/common.c'], extra_compile_args=['-Wno-format-security'])])
